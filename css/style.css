@@ -1,0 +1,423 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    font-size: 30px;
+    color: white;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #7fa0dd 0%, #3285f1 28.53%, #1f3d6b 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+section{
+    padding: 0 19%;
+}
+.hero-text{
+    margin-top: 20px;
+}
+.hero-text h1{
+    font-family: 'Lakki Reddy', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    padding-top: 4px;
+    margin: 0 0 45px;
+}
+.hero-text h4{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.hero-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.hero-img img:hover{
+    transform: translateY(-10px);
+    padding-left: 10px;
+}
+.hero-img img{
+    width: 250px;
+    height: 320px;
+}
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #4d7d95;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.hero-text a:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    transform: translate(8px);
+}
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons i{
+    display: block;
+    margin: 26px;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+.yt i:hover{
+    color: #a32222;
+    transform: translateY(-5px);
+}
+.insta i:hover{
+    color: rgb(233, 125, 193);
+    transform: translateY(-5px);
+}
+.twit i:hover{
+    color: #26a7de;
+    transform: translateY(-5px);
+}
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #4d5d95;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scroll-down i:hover{
+    transform: translateY(5px);
+}
+
+/* opens nav bar in mobile devices */
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 150px;
+        height: 40vh;
+        background: #4d5d95;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 7px 0;
+        margin-left: 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+
+/* For Mobile Phones */
+@media (max-width: 767px) {
+    header {
+      padding: 15px 3%;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .icons {
+      padding: 0 3%;
+    }
+    .scroll-down {
+      right: 3%;
+    }
+    section {
+      padding: 0 3%;
+    }
+    .hero-text {
+      padding-top: 115px;
+    }
+    .hero-img {
+      text-align: center;
+    }
+    .hero-img img {
+      width: 100%;
+      height: auto;
+    }
+    .hero {
+      height: 100%;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+    .scroll-down {
+      display: none;
+    }
+    .navlist {
+      position: absolute;
+      right: -100%;
+      width: 100%;
+      height: auto;
+      padding: 50px 20px;
+      background: #4d5d95;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      transition: all .50s ease;
+
+    }
+    .navlist a {
+      margin-left: 0;
+      display: block;
+      margin: 7px 0;
+    }
+    .navlist.open {
+      top: 0;
+    }
+  }
+  
+/* Tablets */
+@media (max-width: 991px) {
+    section {
+        padding: 0 12%;
+    }
+}
+  
+/* Large Phones */
+@media (max-width: 1199px) {
+    section {
+        padding: 0 9%;
+    }
+}
+  
+/* Smaller Ratio */
+@media (max-width: 1340px) {
+    .hero-text h1 {
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5 {
+        margin-bottom: 25px;
+    }
+}
+  
+/* Smallest Ratio */
+@media (max-width: 680px) {
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sec2container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .sec2container img{
+        object-fit: contain;
+        
+    }
+}
+
+
+
+/* section2 css starts here */
+.s1{
+    height: 100vh;
+    height: fit-content;
+    /* width: fit-content; */
+    padding: 20px;
+    background: linear-gradient(245.59deg, #7fa0dd 0%, #3285f1 28.53%, #1f3d6b 75.52%);
+}
+.s1 h1{
+    margin-top: 0;
+    color: aliceblue;
+    font-family: 'Lakki Reddy', cursive;
+    padding-bottom: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sec2container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+  
+.image-description {
+    flex: 1;
+}
+.image-description p{
+    font-family: 'Caprasimo', cursive;
+    color: white;
+    text-shadow: black;
+    /* font-weight: 500; */
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+.imgcontain {
+    object-fit: contain;
+    overflow: hidden;
+} 
+.imggif {
+    width: 100%;
+    height: 100%;
+    background-image: url('sec2/bp.jpg');
+    background-size: cover;
+    transition: all 0.5s ease;
+}
+.imggif:hover {
+    background-image: url('sec2/bpg.gif');
+}
+#pausesec2{
+    margin-top: 70px;
+    border: #1f3d6b;
+}
+
+#bpdisp{
+    opacity: 0;
+    margin-left: 20px;
+    font-family: 'Lakki Reddy', cursive;
+    font-family: 'Caprasimo', cursive;
+    color: white;
+    font-weight: 800;
+    transition: opacity 0.5s;
+}
+#new{
+    opacity: 0;
+    font-family: 'Lakki Reddy', cursive;
+    font-family: 'Caprasimo', cursive;
+    color: white;
+    transition: opacity 0.5s;
+}
+
+.gemsc{
+    max-width: 200px;
+    height: auto;
+}
+.gemsc img{
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+}
+
+.bpgc{
+    max-width: 500px;
+    height: auto;
+    margin-right: 20px;
+}
+.bpgc img{
+    width: 100%;
+    height: auto;
+}
+.bpimgcontainer{
+    max-width: 500px;
+    height: auto;
+    margin-right: 10px;
+}
+.bpimgcontainer img{
+    width: 100%;
+    height: auto;
+}
+#pausesec2{
+    background-color:rgb(112, 201, 234);
+    border: 3px solid brown;
+    color: black;
+    padding: 5px 8px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    /* position: fixed; */
+}
+.txt2{
+    color: white;
+    /* opacity: 0; */
+    font-family: 'Lakki Reddy', cursive;
+    font-family: 'Caprasimo', cursive;
+    transition: opacity 0.5s;
+    margin-left: 100px;
+}
+#part2{
+    justify-content: space-evenly;
+}

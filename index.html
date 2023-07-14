@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive GAMING WEBSITE</title>
+
+    <link rel="stylesheet"  type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" href="./try.css"> -->
+
+    <!-- boxicon link  -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- remixicon link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lakki+Reddy&family=Poppins:ital,wght@0,500;1,200;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <a href="https://brawlstats.com/" class="logo"> BRAWL-STATS</a>
+        <ul class="navlist">
+            <li><a onclick="openHome()" href="#">HOME</a></li>
+            <li><a onclick="openBrawlers()" href="#">BRAWLERS</a></li>
+            <li><a onclick="openAbout()" href="#">ABOUT US</a></li>
+            <li><a onclick="openContact()" href="#">CONTACT US</a></li>
+            
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+        <section class="hero">
+        <div class="hero-text">
+            <!-- <h5>On Trending</h5> -->
+            <h4>Supercell</h4>
+            <h1>Build and brawl! </h1>
+            <p>Join solo matches or 3-on-3 battles
+            with friends across a variety of modes for games under three minutes!!</p>
+            <a id="toggleButton" class="music-button" href="#">PLAY</a>
+            <audio id="audioPlayer" src="sec1/08. Slugfest 5.mp3"></audio>
+            <a href="https://youtu.be/WEY708twW_g" class="ctaa"><i class="ri-play-fill"></i>">Brawl Talk</a>
+            
+        </div>
+
+        <div onclick="playRandomMusic()"  class="hero-img">
+            <img src="heroimg.png" alt="">
+
+        </div>
+    </section>
+    <div class="icons">
+        <a class="insta" href="https://www.instagram.com/brawlstars/?hl=en"><i class="ri-instagram-line"></i></a>
+        <a class="twit" href="https://twitter.com/BrawlStars"><i class="ri-twitter-line"></i></a>
+        <a class="yt" href="https://www.youtube.com/@BrawlStars"><i class="ri-youtube-line"></i></a>
+    </div>
+    <div class="scroll-down">
+        <a href="#section1" id="playsec2"><i class="ri-arrow-down-s-fill"></i></a>
+        <audio id="sec2player" src="charactermusic/03. Main Menu 2.mp3"></audio>
+    </div>
+
+
+    <main>
+        <section id="section1" class="s1">
+            <!-- <h2>VARIOUS MODES</h2> -->
+            <button id="pausesec2" class="mute">MUTE</button>
+            <div class="sec2container">
+                <span class="bpgc">
+                    <img src="sec2/bpg.gif" alt="">
+                </span>
+                
+                <button id="showcontent" href="#bpdsp">SHOW<i class="ri-arrow-right-double-line"></i></button>
+                <h2 id="bpdisp">Buy the Brawl-Pass using Gems
+                </h2>
+                <div class="gemsc">
+                    <img id="gems" src="sec2/gems.png" alt="">
+                </div>
+                <span class="bpimgcontainer">
+                    <img class="bpimg" src="sec2/bp.jpg" alt="">
+                </span>
+            </div>
+            <div class="image-description">
+                <p>The Brawl Pass is a progression system <br>
+                     implemented in the May 2020 update that <br>
+                      allows players to earn rewards and <br>
+                progress throughout the Brawl Pass season.</p>
+            </div>
+            <!-- <h2 class="modesheader">VARIOUS MODES</h2> -->
+            <div class="sec2container" id="part2">
+                <span class="bpgc">
+                    <img src="sec2/epic.jpeg" alt="">
+                </span>
+                
+                <!-- <button id="show2" href="#">SHOW<i class="ri-arrow-right-double-line"></i></button> -->
+                <h2 id="txt2" class="txt2">Play Various Modes Rank Up and Be in the LeaderBoard!!!
+                </h2>
+                <div class="gemsc">
+                    <img src="sec2/gems.png" alt="">
+                </div>
+                <span class="bpimgcontainer">
+                    <img class="bpimg" src="sec2/showdown.jpeg" alt="">
+                </span>
+            </div>
+            <div class="image-description">
+                <p>Compete in Different Modes  <br>
+                     Rank Up and Customize <br>
+                    Discover Special Events <br>
+                Create Game Maps and Much More.</p>
+            </div>
+        </section>
+      </main>
+
+    <!-- scrollreveal effect -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- custom js link -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
